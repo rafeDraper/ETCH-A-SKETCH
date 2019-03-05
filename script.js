@@ -2,15 +2,15 @@ let body = document.querySelector('body')
 body.setAttribute('style', 'display:flex; flex-direction: column; justify-content: center;')
 
 let grid = document.querySelector('#main');
-grid.setAttribute('style', 'order:2; border: 1px solid gray;  margin: 10px auto; width: 800px; display: grid; grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);')
+grid.setAttribute('style', 'order:2; margin: 10px auto; width: 800px; display: grid; grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);')
 
 // grid.setAttribute('style', 'order:2; margin: auto; width: 800px; height: 800px; display: flex; flex-flow: row wrap; align-content: center;')
 
 
 let button = document.createElement('button');
-button.setAttribute('style', 'order:1; margin: 20px; width: 150px; height: 30px; align-self: center;');
+button.setAttribute('style', 'background: gray; -webkit-border-radius: 28; -moz-border-radius: 28; border-radius: 28px; text-shadow: 2px 1px 2px #090909; -webkit-box-shadow: 6px 5px 24px #666666; -moz-box-shadow: 6px 5px 24px #666666; box-shadow: 2px 3px 4px 1px #252323; font-family: Arial; color: #fafafa; font-size: 14px; text-decoration: none; order:1; margin: 20px; width: 190px; height: 40px; align-self: center;');
 
-button.textContent = 'HEY BISH, CLICK ME'
+button.textContent = 'CLICK ME'
 
 body.appendChild(button);
 
@@ -61,7 +61,7 @@ let coloring = () => {
    let hovering = document.querySelectorAll('.sty');
    hovering.forEach((square) => {
       square.addEventListener('mouseover', (e) => {
-         e.target.style.background = 'red'
+         e.target.style.background = 'yellow'
       })
    });
 
