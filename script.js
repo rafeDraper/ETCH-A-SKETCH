@@ -2,7 +2,7 @@ let body = document.querySelector('body')
 body.setAttribute('style', 'display:flex; flex-direction: column; justify-content: center;')
 
 let grid = document.querySelector('#main');
-grid.setAttribute('style', 'order:2; margin: 10px auto; width: 800px; display: grid; grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);')
+grid.setAttribute('style', 'order:2; margin: 10px auto; width: 600px; display: grid; grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);')
 
 // grid.setAttribute('style', 'order:2; margin: auto; width: 800px; height: 800px; display: flex; flex-flow: row wrap; align-content: center;')
 
@@ -44,7 +44,7 @@ function question() {
 function origin(size) {
    let content = document.createElement('div');
    content.setAttribute('style', 'background-color:black;')
-   content.style.height = (800 / size).toString() +'px';
+   content.style.height = (600 / size).toString() +'px';
    content.classList.add('sty');
    grid.appendChild(content);
 }
